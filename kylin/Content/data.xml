@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bcaster autoPlayTime="10">
+  <item item_url="/content/slide/01.jpg" link="http://www.sf.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/02.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/03.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/04.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/05.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/06.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/07.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/08.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/09.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+  <item item_url="/content/slide/10.jpg" link="http://www.5icool.org" itemtitle="">
+  </item>
+</bcaster>

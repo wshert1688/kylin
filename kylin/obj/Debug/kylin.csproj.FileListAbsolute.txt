@@ -1,0 +1,8 @@
+E:\yy\kylin\kylin\bin\kylin.dll
+E:\yy\kylin\kylin\bin\kylin.pdb
+E:\yy\kylin\kylin\bin\EntityFramework.dll
+E:\yy\kylin\kylin\bin\EntityFramework.xml
+E:\yy\kylin\kylin\obj\Debug\ResolveAssemblyReference.cache
+E:\yy\kylin\kylin\obj\Debug\kylin.dll
+E:\yy\kylin\kylin\obj\Debug\kylin.pdb
+E:\yy\kylin\kylin\bin\MySql.Data.dll

@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "article";
+    Layout = "~/Views/Shared/_admin_layout.cshtml";
+    var result = ViewBag.result as DataResult<IList<Article>>;
+}
+<div id="main">
+    <div class="cl">
+        &nbsp;</div>
+    <!-- Content -->
+    <div id="content">
+        <!-- Box -->
+        <div class="box">
+            <!-- Box Head -->
+            <div class="box-head">
+                <h2 class="left">文章列表</h2>
+                <div class="right">
+                   
+                </div>
+            </div>
+            <!-- End Box Head -->
+            <!-- Table -->
+            <div class="table">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <th>
+                            标题
+                        </th>
+                        <th>
+                            日期
+                        </th>
+                        <th width="110" class="ac">
+                            操作
+                        </th>
+                    </tr>
+                    @foreach (Article item in result.data) {
+                    <tr>
+                        <td>
+                            <h3>
+                                <a href="#">@item.title </a></h3>
+                        </td>
+                        <td>
+                            @item.created.ToString()
+                        </td>
+                        <td>
+                            <a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a>
+                        </td>
+                    </tr>
+                    }
+                </table>
+                <!-- Pagging -->
+                <div class="pagging">
+                    <div class="left"></div>
+                    <div class="right">
+                        @Html.Raw( Utils.GetPageNumbers(result.pageIndex,10,Url.Action("article"),6))
+                    </div>
+                </div>
+                <!-- End Pagging -->
+            </div>
+            <!-- Table -->
+        </div>
+        <!-- End Box -->
+        <!-- Box -->
+        <div class="box">
+            <!-- Box Head -->
+            <div class="box-head">
+                <h2>文章</h2>
+            </div>
+            <!-- End Box Head -->
+            <form action="" method="post">
+            <!-- Form -->
+            <div class="form">
+                <p>
+                    <span class="req">max 100 symbols</span>
+                    <label>
+                        Article Title <span>(Required Field)</span></label>
+                    <input type="text" class="field size1" />
+                </p>
+                <p>
+                    <span class="req">max 100 symbols</span>
+                    <label>
+                        Content <span>(Required Field)</span></label>
+                    <textarea class="field size1" rows="10" cols="30"></textarea>
+                </p>
+            </div>
+            <!-- End Form -->
+            <!-- Form Buttons -->
+            <div class="buttons">
+                <input type="button" class="button" value="preview" />
+                <input type="submit" class="button" value="submit" />
+            </div>
+            <!-- End Form Buttons -->
+            </form>
+        </div>
+        <!-- End Box -->
+    </div>
+    <!-- End Content -->
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <!-- Box -->
+        <div class="box">
+            <!-- Box Head -->
+            <div class="box-head">
+                <h2>
+                    Management</h2>
+            </div>
+            <!-- End Box Head-->
+            <div class="box-content">
+                <a href="#" class="add-button"><span>Add new Article</span></a>
+                <div class="cl">
+                    &nbsp;</div>
+                <p class="select-all">
+                    <input type="checkbox" class="checkbox" /><label>select all</label></p>
+                <p>
+                    <a href="#">Delete Selected</a></p>
+                <!-- Sort -->
+                <div class="sort">
+                    <label>
+                        Sort by</label>
+                    <select class="field">
+                        <option value="">Title</option>
+                    </select>
+                    <select class="field">
+                        <option value="">Date</option>
+                    </select>
+                    <select class="field">
+                        <option value="">Author</option>
+                    </select>
+                </div>
+                <!-- End Sort -->
+            </div>
+        </div>
+        <!-- End Box -->
+    </div>
+    <!-- End Sidebar -->
+    <div class="cl">
+        &nbsp;</div>
+</div>
